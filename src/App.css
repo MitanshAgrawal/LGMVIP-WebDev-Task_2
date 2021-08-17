@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Ubuntu&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
 }
+body{
+background-image: url("https://images.unsplash.com/photo-1628114855639-f8294222fdc2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+background-size: cover ; 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Nav {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    height: 70px;
+    padding: 20px;
+    padding-top: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  h1 {
+    float: left;
+    color: #ff9c00;
   }
-  to {
-    transform: rotate(360deg);
+  .btn {
+    float: right;
+    padding: 10px;
+    background-color: #ff9c00;
+    cursor: pointer;
+    border-radius: 5px;
   }
-}
+  .btn:hover {
+    background-color: #5A5A5A;
+  }
+  .row {
+    margin: 30px;
+  }
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10 10px;
+    margin: 20px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    background-color: whitesmoke;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .card-img-top {
+    background-color: #9834eb;
+    border-radius: 50%;
+    height: 50%;
+    width: 50%;
+    border: 2px solid white;
+  }
+  .card-title {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .card-text {
+    color: grey;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .card:hover{
+    box-shadow: 0px 0px 5px 5px white;
+    cursor: pointer;
+  }
+  .card:hover .card-text{
+color: rgb(37, 129, 248);
+  }
